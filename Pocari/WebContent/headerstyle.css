@@ -1,0 +1,31 @@
+@CHARSET "EUC-KR";
+
+a{text-decoration: none; color: white;}
+li{list-style: none;}
+#logo,ul,li,label,input[type=submit],button{cursor: pointer;}
+#f2 b,#f2 p{cursor: default;}
+input[type=text],input[type=email],input[type=password]{width: 275px; height: 30px;}
+input:focus{outline: none;}
+header{position: fixed; display: flex; flex-flow: row wrap; justify-content: space-between; width: 100%; height: 100px; background-color: #fe7f2d; z-index: 5;}
+header>ul{display: flex; height: 35px; text-align: center; font-weight: 100; color: white;}
+header>ul>li{padding: 10px;}
+#help>ul{display: none; padding-top: 5px;}
+#help>ul li{font-size: 14px; line-height: 20px;}
+#help>ul{display: none; padding-top: 5px;}
+#help>ul li{font-size: 14px; line-height: 20px;}
+#help:hover ul{display: block;}
+#logo{position: absolute; left: calc(50% - 53px);}
+#logo>img{height: 100px;}
+
+#menubar{display: none; position: relative; width: 100%; height: 100px; font-size: 60px; color: white;}
+#menubar>li{height: 100px;}
+.fa-bars{position: absolute; left: 20px;}
+i.fa-times{position: absolute; left: 20px; display: none;}
+#subbar{position: relative; top: 80px; left: -300px; padding-left: 30px; width: 300px; height: calc(100vh - 100px); text-align: left; font-size: 25px; line-height: 70px; background-color: #233d4d;}
+#subbar i{width: 45px; color: #fe7f2e;}
+
+@media(max-width:768px){
+	header>ul{display: none; padding-top: 20px;}
+	header>ul>li{padding: 0;}
+	#menubar{display: block;}
+}
