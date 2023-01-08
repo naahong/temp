@@ -57,4 +57,42 @@ export default PlusMinus;
 
 
 
+import MyComponent from "./MyComponent";
+import Counter from "./Counter";
+import Say from "./Say";
+import PlusMinus from "./PlusMinus";
+import "./App.css";
+
+// function App() {
+//   const name = "나현";
+//   const num = 0;
+//   const udf = undefined;
+//   return (
+//     <div className="react">
+//       {name === "나현" ? <h1>나는나현</h1> : <h2>현나현나</h2>}
+//       {name === "김나현" && <h3>나는 김나현</h3>}
+//       {num && <h1>falsy</h1>}
+//       {udf || <h4>undefined</h4>}
+//       {/*주석이됨*/}
+//     </div>
+//   );
+// }
+
+const App = () => {
+  return <PlusMinus name="현나"></PlusMinus>;
+};
+
+export default App;
+
+
+
+
+.nahyun {
+  background: white;
+  width: 75px;
+  height: 40px;
+  text-align: center;
+}
+
+
 ,,,
