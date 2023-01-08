@@ -1,0 +1,60 @@
+,,,javascript
+
+
+import { useState } from "react";
+
+const PlusMinus = () => {
+  const [number, setNumber] = useState(0);
+  const [backgroundColor, setColor] = useState("");
+  const onClickMinus = () => {
+    setNumber(number - 1);
+    setColor(
+      "rgb(" +
+        randomRGBColor() +
+        ", " +
+        randomRGBColor() +
+        ", " +
+        randomRGBColor() +
+        ")"
+    );
+  };
+  const onClickPlus = () => {
+    setNumber(number + 1);
+    setColor(
+      "rgb(" +
+        randomRGBColor() +
+        ", " +
+        randomRGBColor() +
+        ", " +
+        randomRGBColor() +
+        ")"
+    );
+  };
+
+  function randomRGBColor() {
+    const num = 1;
+    return Math.floor(Math.random() * 1000 * num);
+  }
+
+  return (
+    <>
+      <div className="nahyun">
+        <h1 style={{ backgroundColor }}>{number}</h1>
+      </div>
+      <button onClick={onClickMinus}>&nbsp;-1&nbsp;</button>
+      <button onClick={onClickPlus}>&nbsp;+1&nbsp;</button>
+    </>
+  );
+};
+
+PlusMinus.defaultProps = {
+  number: 0,
+  color: "white",
+};
+
+export default PlusMinus;
+
+
+
+
+,,,
